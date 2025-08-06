@@ -1,0 +1,95 @@
+2025-06-21 11:03:09 INFO  BotConfig:39 - ✅ Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@72d2dee4
+2025-06-21 11:03:17 INFO  BotConfig:39 - ✅ Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2003d52e
+2025-06-21 11:05:27 INFO  BotConfig:39 - ✅ Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@706f0aa9
+2025-06-21 11:08:52 INFO  BotConfig:38 - Бот запущен.Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@6158f2d
+2025-06-21 11:09:00 INFO  BotConfig:38 - Бот запущен.Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@7d32593a
+2025-06-21 11:09:01 INFO  BotConfig:45 - Завершаю сессию бота...
+2025-06-21 11:11:52 INFO  BotConfig:38 - Бот запущен.Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@168e1403
+2025-06-21 11:17:47 INFO  BotConfig:45 - Завершаю сессию бота...
+2025-06-21 11:17:52 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@4618103f
+2025-06-21 11:17:55 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@140ef5dd
+2025-06-21 11:24:05 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@72071601
+2025-06-21 11:49:25 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@6e989d1
+2025-06-21 11:49:33 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@76da1caa
+2025-06-21 11:51:22 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@332746cc
+2025-06-21 11:58:11 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@6f935617
+2025-06-21 11:58:17 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@7b3e3cf6
+2025-06-21 11:58:54 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@32f1f5e
+2025-06-21 12:06:33 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2d64df43
+2025-06-21 12:08:16 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@605ab548
+2025-06-21 12:11:15 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@51f2b926
+2025-06-21 12:16:03 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2dfe908c
+2025-06-21 12:16:42 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@3bea370b
+2025-06-21 12:21:06 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2b47b0a5
+2025-06-21 12:29:06 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@67be9727
+2025-06-21 12:29:13 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@332746cc
+2025-06-21 12:30:24 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@52f8a618
+2025-06-21 12:39:29 INFO  BotConfig:46 - Бот запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2821ea10
+2025-06-24 17:53:55 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@235ca016
+2025-06-24 17:55:25 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-24 19:14:19 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@10957ed3
+2025-06-24 19:19:31 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@4799d9c0
+2025-06-24 20:50:08 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-24 20:50:10 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-24 20:50:11 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@139f1661
+2025-06-25 11:16:56 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-25 11:17:45 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-25 11:17:47 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@3a7a97c8
+2025-06-25 11:17:49 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-25 11:18:37 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-25 11:18:38 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@72be329
+2025-06-25 12:01:18 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-25 12:01:42 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-25 17:21:54 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@648fa6b1
+2025-06-25 17:29:45 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@3e53188e
+2025-06-25 18:02:21 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@5c88ad96
+2025-06-25 18:09:56 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@9d5f0d6
+2025-06-25 18:10:25 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:10:25 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:10:25 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:10:25 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:13:51 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@26778b61
+2025-06-25 18:14:49 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:14:49 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:14:49 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 18:14:49 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01565"] not found.
+2025-06-25 21:26:23 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@7daeecc0
+2025-06-25 21:27:53 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-25 21:28:11 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-25 21:45:55 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@3f1ffcf6
+2025-06-25 21:46:08 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-25 22:04:35 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@4022fb6d
+2025-06-25 22:05:01 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:05:02 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:06:28 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:06:29 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:06:29 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:06:29 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:06:29 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01090B"] not found.
+2025-06-25 22:14:06 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@11088f1d
+2025-06-25 22:14:16 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01375"] not found.
+2025-06-25 22:16:30 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@fe1f4e4
+2025-06-25 22:16:37 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01375"] not found.
+2025-06-25 22:16:40 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01375"] not found.
+2025-06-26 09:16:43 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@560c11ba
+2025-06-26 09:20:05 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-26 09:20:07 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-26 09:30:50 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-26 09:31:01 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@3404a1b5
+2025-06-26 09:31:02 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-26 09:31:05 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@7eca856e
+2025-06-26 09:31:06 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-26 09:31:10 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-26 09:38:17 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-26 09:38:24 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@153a25d9
+2025-06-26 09:38:24 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-26 09:38:26 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@1614a7ae
+2025-06-26 09:38:26 WARN  BotConfig:46 - Обнаружена активная сессия бота. Принудительная остоновка
+2025-06-26 09:38:30 INFO  BotConfig:65 - Предыдущая сессия бота успешно остановлена
+2025-06-26 09:38:59 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-26 09:39:53 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@612e4c8b
+2025-06-26 09:41:58 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@697c1903
+2025-06-26 09:56:18 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@2519214b
+2025-06-26 09:56:32 ERROR CurrencyService:57 - Error getting currency rates: JSONObject["R01239"] not found.
+2025-06-26 10:00:01 INFO  BotConfig:40 - Бот успешно запущен. Session: org.telegram.telegrambots.updatesreceivers.DefaultBotSession@5b9ed95d
+2025-06-26 10:00:11 ERROR CurrencyService:58 - Error getting currency rates: JSONObject["RUB"] not found.
