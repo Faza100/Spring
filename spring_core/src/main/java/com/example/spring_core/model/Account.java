@@ -1,33 +1,37 @@
 package com.example.spring_core.model;
 
-public class Account {
-    private int id;
-    private User user;
-    private double moneyAmount;
+import java.math.BigDecimal;
 
-    public Account(int id, User user, double moneyAmount) {
+public class Account {
+    private final long id;
+    private final long userId;
+    private BigDecimal moneyAmount;
+
+    public Account(long id, long userId, BigDecimal moneyAmount) {
         this.id = id;
-        this.user = user;
+        this.userId = userId;
         this.moneyAmount = moneyAmount;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public User getUser() {
-        return user;
+    public long getUserId() {
+        return userId;
     }
 
-    public double getMoneyAmount() {
+    public BigDecimal getMoneyAmount() {
         return moneyAmount;
     }
 
-    public void setMoneyAmount(double moneyAmount) {
+    public void setMoneyAmount(BigDecimal moneyAmount) {
         this.moneyAmount = moneyAmount;
     }
 
-    public Long getUserId() {
-        return user.getId();
+    @Override
+    public String toString() {
+        return "Account {id= " + id + ", userId='" + userId +
+                "',\n/moneyAmount=" + moneyAmount;
     }
 }
