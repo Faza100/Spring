@@ -19,14 +19,14 @@ public class InMemoryUserRepository {
     }
 
     public User addUser(Long id, String login) {
-        User user = new User(id, login);
+        User user = new User(login);
         usersList.add(user);
         return user;
     }
 
-    public Account addAccount(long accountId, long userId, BigDecimal moneyAmount, User user) {
+    public Account addAccount(User user, BigDecimal moneyAmount) {
         List<Account> accountList = user.getAccountList();
-        Account account = new Account(accountId, userId, moneyAmount);
+        Account account = new Account(user, moneyAmount);
         accountList.add(account);
         return account;
     }
@@ -51,19 +51,35 @@ public class InMemoryUserRepository {
                 .orElseThrow(() -> new IllegalArgumentException("There is no account with such ID: " + id));
     }
 
-    public void deliteAccountById(long id) {
+    public void deleteAccountById(long id) {
         for (User user : usersList) {
             Optional<Account> accountOpt = user.getAccountList().stream()
                     .filter(a -> a.getId() == id)
                     .findFirst();
 
             if (accountOpt.isPresent()) {
-                user.getAccountList().remove(accountOpt.get());
+                Account accountToDelete = accountOpt.get();
+                List<Account> userAccounts = user.getAccountList();
+
+                if (userAccounts.size() <= 1) {
+                    throw new IllegalStateException("Cannot delete the last account of a user");
+                }
+
+                if (accountToDelete.getMoneyAmount().compareTo(BigDecimal.ZERO) > 0) {
+                    Account existingAccount = userAccounts.stream()
+                            .filter(a -> a.getId() != id)
+                            .findFirst()
+                            .orElseThrow();
+                    BigDecimal balanceToTransfer = accountToDelete.getMoneyAmount();
+                    existingAccount.setMoneyAmount(existingAccount.getMoneyAmount().add(balanceToTransfer));
+                    accountToDelete.setMoneyAmount(BigDecimal.ZERO);
+                }
+
+                userAccounts.remove(accountOpt.get());
                 return;
             }
         }
         throw new IllegalArgumentException("There is no account with ID: " + id);
-
     }
 
     public List<User> getUserList() {

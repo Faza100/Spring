@@ -6,55 +6,53 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.example.spring.model.Account;
 import com.example.spring.model.User;
+import com.example.spring.repository.AccountsRepository;
 import com.example.spring.repository.InMemoryUserRepository;
+import com.example.spring.repository.UsersRepository;
 
 @Service
 public class UserService {
 
-    private InMemoryUserRepository repository;
-    private AccountService accountService;
+    private final UsersRepository usersRepository;
+    private final AccountsRepository accountsRepository;
     private final long defaultAccountAmount;
-    private static Long userCounter = 0L;
 
-    public UserService(InMemoryUserRepository repository,
-            AccountService accountService,
+    public UserService(UsersRepository usersRepository,
+            AccountsRepository accountsRepository,
             @Value("${account.default-amount}") long defaultAccountAmount) {
-        this.repository = repository;
-        this.accountService = accountService;
+        this.usersRepository = usersRepository;
+        this.accountsRepository = accountsRepository;
         this.defaultAccountAmount = defaultAccountAmount;
     }
 
     public User createUser(String login) {
         if (login == null || login.trim().isEmpty()) {
-            throw new IllegalArgumentException("Login cannot be empty");
+            throw new IllegalArgumentException(
+                    "Login cannot be empty");
         }
 
-        if (repository.existsByLogin(login)) {
-            throw new IllegalArgumentException("Think of another login, this login is already taken");
+        if (usersRepository.existsByLogin(login)) {
+            throw new IllegalArgumentException(
+                    "Think of another login, this login is already taken");
         }
 
-        genereteUserCounter();
-        accountService.genereteAccountCounter();
-        User user = repository.addUser(getUserCounter(), login);
-        repository.addAccount(accountService.getAccountCounter(), getUserCounter(),
-                BigDecimal.valueOf(defaultAccountAmount), user);
+        User user = new User(login);
+        usersRepository.addUser(user);
+
+        Account account = new Account(user,
+                BigDecimal.valueOf(defaultAccountAmount));
+        accountsRepository.addAccount(account);
+
         return user;
     }
 
     public User findByUserId(long id) {
-        return repository.findByUserId(id);
+        return usersRepository.findByUserId(id);
     }
 
-    public List<User> getUserList() {
-        return repository.getUserList();
-    }
-
-    public Long getUserCounter() {
-        return userCounter;
-    }
-
-    public void genereteUserCounter() {
-        userCounter++;
+    public List<User> getAllUsers() {
+        return usersRepository.getAllUsers();
     }
 }

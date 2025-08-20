@@ -15,8 +15,8 @@ import jakarta.annotation.PostConstruct;
 @Component
 public class OperationsConsoleListener {
 
-    private AccountService accountService;
-    private UserService userService;
+    private final AccountService accountService;
+    private final UserService userService;
 
     private Scanner scanner;
 
@@ -38,42 +38,32 @@ public class OperationsConsoleListener {
         try {
             switch (command) {
                 case "1":
-                    if (userService.getUserList().isEmpty()) {
-                        System.out.println("First, create a user!");
-                    } else {
-                        createAccount();
-                    }
+                    if (searcUsers())
+                        return;
+                    createAccount();
                     break;
                 case "2":
                     showAllUsers();
                     break;
                 case "3":
-                    if (userService.getUserList().isEmpty()) {
-                        System.out.println("First, create a user!");
-                    } else {
-                        accountClose();
-                    }
+                    if (searcUsers())
+                        return;
+                    accountClose();
                     break;
                 case "4":
-                    if (userService.getUserList().isEmpty()) {
-                        System.out.println("First, create a user!");
-                    } else {
-                        accountWithdraw();
-                    }
+                    if (searcUsers())
+                        return;
+                    accountWithdraw();
                     break;
                 case "5":
-                    if (userService.getUserList().isEmpty()) {
-                        System.out.println("First, create a user!");
-                    } else {
-                        accouuntDeposit();
-                    }
+                    if (searcUsers())
+                        return;
+                    accouuntDeposit();
                     break;
                 case "6":
-                    if (userService.getUserList().isEmpty()) {
-                        System.out.println("First, create a user!");
-                    } else {
-                        accountTrransfer();
-                    }
+                    if (searcUsers())
+                        return;
+                    accountTrransfer();
                     break;
                 case "7":
                     createUser();
@@ -91,6 +81,14 @@ public class OperationsConsoleListener {
         }
     }
 
+    public boolean searcUsers() {
+        if (userService.getAllUsers().isEmpty()) {
+            System.out.println("First, create a user!");
+            return true;
+        }
+        return false;
+    }
+
     public void createAccount() {
         System.out.println("Enter the user id for which to create an account: ");
         long userId = scanner.nextLong();
@@ -101,14 +99,14 @@ public class OperationsConsoleListener {
     }
 
     public void showAllUsers() {
-        System.out.println(userService.getUserList());
+        System.out.println(userService.getAllUsers());
     }
 
     public void accountClose() {
         System.out.println("Enter account ID to close: ");
         long accountId = scanner.nextLong();
         scanner.nextLine();
-        accountService.deliteAccountById(accountId);
+        accountService.deleteAccountById(accountId);
         System.out.println("Account with ID " +
                 accountId + " has been closed");
     }
